@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Peers' search</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+		<style> ul.a {list-style-type: circle;} </style>
+			
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="home.html" class="logo">
+									<span class="symbol"><img src="static/images/EY_Logo_Beam.jpg"  /></span><span class="title">Peers' search</span>
+								</a>
+
+							<!-- Nav
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+ -->
+						</div>
+					</header>
+
+
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>About the company to value</h1>
+								
+								<p>Please fill in the information about the firm you want to value: <p>
+								<form action="http://127.0.0.1:5000/new_data" method="post"> 
+									
+								    <div>
+									<label for="name">Name:</label>
+									<input type="text" id="name" name="name">
+								    </div>
+								    <div>
+									<label for="country">Country of Headquarters:</label>
+									<input type="text" id="country" name="country">
+									<!-- <select id="country" name='country'>
+										<option value = 'Japan'>Japan</option>
+										<option value = 'India'>India</option>
+										<option value = 'United States'>United States</option>
+										<option value ='China'>China</option>
+										<option value ='South Korea'>South Korea</option>
+										<option value ='Real Estate'>Real Estate</option>
+										<option value ='Software and Services'>Software and Services</option>
+										<option value ='Retailing'>Retailing</option>
+										<option value ='Consumer Services'>Consumer Services</option>
+										<option value ='Pharmaceuticals, Biotechnology and Life Sciences'>Pharmaceuticals, Biotechnology and Life Sciences</option>
+										<option value ='Energy'>Energy</option>
+										<option value ='Commercial and Professional Services'>Commercial and Professional Services</option>
+										<option value ='Transportation'>Transportation</option>
+										<option value ='Health Care Equipment and Services'>Health Care Equipment and Services </option>
+										<option value ='Media and Entertainment'>Media and Entertainment</option>
+										<option value ='Automobiles and Components'>Automobiles and Components</option>
+										<option value ='Utilities'>Utilities</option>
+										<option value ='Semiconductors and Semiconductor Equipment'>Semiconductors and Semiconductor Equipment</option>
+										<option value ='Food and Staples Retailing'>Food and Staples Retailing</option>
+										<option value ='Diversified Financials'>Diversified Financials</option>
+										<option value ='Insurance'>Insurance</option>
+										<option value ='Banks'>Banks</option>
+									  </select> -->
+								  </div>
+								    <div>
+									<label for="currency">Currency:</label>
+									<select id="currency" name='currency'>
+										<option value = 'JPY'>JPY</option>
+										<option value = 'USD'>USD</option>
+										<option value = 'INR'>INR</option>
+										<option value ='CNY'>CNY</option>
+										<option value ='KRW'>KRW</option>
+										<option value ='EUR'>EUR</option>
+										<option value ='TWD'>TWD</option>
+										<option value ='HKD'>HKD</option>
+										<option value ='MYR'>MYR</option>
+										<option value ='AUD'>AUD</option>
+										<option value ='THB'>THB</option>
+										<option value ='GBP'>GBP</option>
+										<option value ='CAD'>CAD</option>
+										<option value ='SEK'>SEK </option>
+										<option value ='SGD'>SGD</option>
+										<option value ='TRY'>TRY</option>
+										<option value ='PLN'>PLN</option>
+										<option value ='PKR'>PKR</option>
+										<option value ='LKR'>LKR</option>
+										<option value ='BRL'>BRL</option>
+										<option value ='ZAR'>ZAR</option>
+										<option value ='IDR'>IDR</option>
+										<option value ='BDT'>BDT</option>
+										<option value ='CHF'>CHF</option>
+										<option value ='ILS'>ILS</option>
+										<option value ='NZD'>NZD</option>
+										<option value ='SAR'>SAR</option>
+										<option value ='VND'>VND</option>
+										<option value ='RUB'>RUB</option>
+										<option value ='NOK'>NOK</option>
+										<option value ='OMR'>OMR</option>
+										<option value ='PEN'>PEN</option>
+										<option value ='PHP'>PHP</option>
+										<option value ='DKK'>DKK</option>
+										<option value ='CLP'>CLP</option>
+										<option value ='KWD'>KWD</option>
+										<option value ='NGN'>NGN</option>
+										<option value ='ARS'>ARS</option>
+										<option value ='BGN'>BGN</option>
+										<option value ='RON'>RON</option>
+										<option value ='HRK'>HRK</option>
+										<option value ='AED'>AED</option>
+										<option value ='MXN'>MXN</option>
+										<option value ='JOD'>JOD</option>
+										<option value ='JMD'>JMD</option>
+										<option value ='QAR'>QAR</option>
+										<option value ='COP'>COP</option>
+										<option value ='MUR'>MUR</option>
+										<option value ='KES'>KES</option>
+										<option value ='EGP'>EGP</option>
+										<option value ='TTD'>TTD</option>
+										<option value ='BHD'>BHD</option>
+										<option value ='HUF'>HUF</option>
+										<option value ='BWP'>BWP</option>
+										<option value ='ZMW'>ZMW</option>
+										<option value ='MAD'>MAD</option>
+										<option value ='ISK'>ISK</option>
+										<option value ='CZK'>CZK</option>
+										<option value ='GHS'>GHS</option>
+										<option value ='NAD'>NAD</option>
+										<option value ='KZT'>KZT</option>
+										<option value ='MOP'>MOP</option>
+										<option value ='PGK'>PGK</option>
+										<option value ='UAH'>UAH</option>
+										<option value ='TZS'>TZS</option>
+										<option value ='RSD'>RSD</option>
+
+
+									  </select>
+								  </div>
+								    <div>
+									<label for="industry_group_name">Industry group name:</label>
+									<select id="industry_group_name" name='industry_group_name'>
+										  <option value = 'Capital Goods'>Capital Goods</option>
+										  <option value = 'Materials'>Materials</option>
+										  <option value = 'Consumer Durables and Apparel'>Consumer Durables and Apparel</option>
+										  <option value ='Technology Hardware and Equipment'>Technology Hardware and Equipment</option>
+										  <option value ='Food, Beverage and Tobacco'>Food, Beverage and Tobacco</option>
+										  <option value ='Real Estate'>Real Estate</option>
+										  <option value ='Software and Services'>Software and Services</option>
+										  <option value ='Retailing'>Retailing</option>
+										  <option value ='Consumer Services'>Consumer Services</option>
+										  <option value ='Pharmaceuticals, Biotechnology and Life Sciences'>Pharmaceuticals, Biotechnology and Life Sciences</option>
+										  <option value ='Energy'>Energy</option>
+										  <option value ='Commercial and Professional Services'>Commercial and Professional Services</option>
+										  <option value ='Transportation'>Transportation</option>
+										  <option value ='Health Care Equipment and Services'>Health Care Equipment and Services </option>
+										  <option value ='Media and Entertainment'>Media and Entertainment</option>
+										  <option value ='Automobiles and Components'>Automobiles and Components</option>
+										  <option value ='Utilities'>Utilities</option>
+										  <option value ='Semiconductors and Semiconductor Equipment'>Semiconductors and Semiconductor Equipment</option>
+										  <option value ='Food and Staples Retailing'>Food and Staples Retailing</option>
+										  <option value ='Diversified Financials'>Diversified Financials</option>
+										  <option value ='Insurance'>Insurance</option>
+										  <option value ='Banks'>Banks</option>
+										</select>
+								    </div>
+								    <div>
+									<label for="revenue_growth_FY2018">Revenue growth FY2018 (%):</label>
+									<input type="number" id="revenue_growth_FY2018" name="revenue_growth_FY2018">
+								    </div>
+								    <div>
+									<label for="ebitda_FY2017">EBITDA FY2017 (EUR m):</label>
+									<input type="number" id="ebitda_FY2017" name="ebitda_FY2017">
+								    </div>
+								    <div>
+									<label for="ebit">EBIT (EUR m):</label>
+									<input type="number" id="ebit" name="ebit">
+								    </div>
+								    <div>
+									<label for="net_income">Net Income (EUR m):</label>
+									<input type="number" id="net_income" name="net_income">
+								    </div>
+								    <div>
+									<label for="quick_ratio">Quick Ratio:</label>
+									<input type="number" id="quick_ratio" name="quick_ratio">
+									</div>
+									<div>
+									<label for='CAPEX / EBITDA FY2017'>CAPEX / EBITDA FY2017:</label>
+									<input type="number" id='CAPEX / EBITDA FY2017' name='CAPEX / EBITDA FY2017'>
+									</div>
+									<div>
+									<label for='ST Debt (EUR m)'>ST Debt (EUR m):</label>
+									<input type="number" id='ST Debt (EUR m)' name='ST Debt (EUR m)'>
+									</div>
+									<div>
+									<label for='Net Debt FY2017 (EUR m)'>Net Debt FY2017 (EUR m):</label>
+									<input type="number" id='Net Debt FY2017 (EUR m)' name='Net Debt FY2017 (EUR m)'>
+									</div>
+									<div>
+									<label for='Working Capital (EUR m)'>Working Capital (EUR m):</label>
+									<input type="number" id='Working Capital (EUR m)' name='Working Capital (EUR m)'>
+									</div>
+									<div>
+									<label for='Debt to Equity Ratio FY2017'>Debt to Equity Ratio FY2017:</label>
+									<input type="number" id='Debt to Equity Ratio FY2017' name='Debt to Equity Ratio FY2017'>
+									</div>
+									<div>
+									<label for='Basic EPS'>Basic EPS:</label>
+									<input type="number" id='Basic EPS' name='Basic EPS'>
+									</div>
+									<div>
+									<label for='Total Current Assets (EUR m)'>Total Current Assets (EUR m):</label>
+									<input type="number" id='Total Current Assets (EUR m)' name='Total Current Assets (EUR m)'>
+									</div>
+									<div>
+									<label for='Cash flow from investing (EUR m)'>Cash flow from investing (EUR m):</label>
+									<input type="number" id='Cash flow from investing (EUR m)' name='Cash flow from investing (EUR m)'>
+									</div>
+									<div>
+									<label for='Cash from financing (EUR m)'>Cash from financing (EUR m):</label>
+									<input type="number" id='Cash from financing (EUR m)' name='Cash from financing (EUR m)'>
+									</div>
+									<div>
+									<label for='Levered Free Cash Flow (EUR m)'>Levered Free Cash Flow (EUR m):</label>
+									<input type="number" id='Cash flow from investing (EUR m)' name='Levered Free Cash Flow (EUR m)'>
+									</div>
+									<div>
+									<label for='Momentum FY2017'>Momentum FY2017:</label>
+									<input type="number" id='Momentum FY2017' name='Momentum FY2017'>
+									</div>
+									<div>
+									<label for='P/E Value FY2017'>P/E Value FY2017:</label>
+									<input type="number" id='P/E Value FY2017' name='P/E Value FY2017'>
+									</div>
+									<div>
+									<input type = "submit">
+									</div>							
+										       
+											     
+							 	</form>
+					
+							</header>
+							
+						</div>
+					</div>
+			</div>
+		<!-- Scripts
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> -->
+	</body>
+</html>

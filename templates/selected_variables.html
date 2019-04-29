@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Manual process</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+		<!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>		 -->
+	</head>
+
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+							<a class="logo">
+								<span class="symbol"><img src="http://127.0.0.1:5000/static/images/EY_Logo_Beam.jpg" alt="" /></span><span class="title">Peers' search</span>
+							</a>
+
+							<!-- Nav -->
+								<!-- <nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav> -->
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="choice.html">Choice</a></li>
+							<!-- <li><a href="automated_process.html">Automated process</a></li>
+							<li><a href="selected_variables.html">Manual process</a></li> -->
+
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Manual process</h1>
+							<p>Please select the characteristics you want to keep:</p>
+							<form action="http://127.0.0.1:5000/selection" method="post">
+								<!--<label for="name">Please select the characteristics you want to keep:</label>-->
+								
+								<!-- <fieldset> -->
+								  <div class="checkboxFive">
+										<input type="checkbox" id="Country of Headquarters" name="variables" value="Country of Headquarters"> 
+								    <label for="Country of Headquarters">Country of Headquarters</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Currency" name="variables" value="Currency">
+								    <label for="Currency">Currency</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Industry Group Name" name="variables" value="Industry Group Name">
+								    <label for="Industry Group Name">Industry Group Name</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Revenue growth FY2018 (%)" name="variables" value="Revenue growth FY2018 (%)">
+								    <label for="Revenue growth FY2018 (%)">Revenue growth FY2018 (%)</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="EBITDA FY2017 (EUR m)" name="variables" value="EBITDA FY2017 (EUR m)">
+								    <label for="EBITDA FY2017 (EUR m)">EBITDA FY2017 (EUR m)</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="EBIT (EUR m)" name="variables" value="EBIT (EUR m)">
+								    <label for="EBIT (EUR m)">EBIT (EUR m)</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Net Income (EUR m)" name="variables" value="Net Income (EUR m)">
+								    <label for="Net Income (EUR m)">Net Income (EUR m)</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Quick Ratio" name="variables" value="Quick Ratio">
+								    <label for="Quick Ratio">Quick Ratio</label>
+									</div>
+									<div class="checkboxFive">
+								    <input type="checkbox" id='CAPEX / EBITDA FY2017' name="variables" value='CAPEX / EBITDA FY2017'>
+								    <label for='CAPEX / EBITDA FY2017'>CAPEX / EBITDA FY2017</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id='ST Debt (EUR m)' name="variables" value='ST Debt (EUR m)'>
+								    <label for='ST Debt (EUR m)'>ST Debt (EUR m)</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Net Debt FY2017 (EUR m)" name="variables" value="Net Debt FY2017 (EUR m)">
+								    <label for="Net Debt FY2017 (EUR m)">Net Debt FY2017 (EUR m)</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Working Capital (EUR m)" name="variables" value="Working Capital (EUR m)">
+								    <label for="Working Capital (EUR m)">Working Capital (EUR m)</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Debt to Equity Ratio FY2017" name="variables" value="Debt to Equity Ratio FY2017">
+								    <label for="Debt to Equity Ratio FY2017">Debt to Equity Ratio FY2017</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Basic EPS" name="variables" value="Basic EPS">
+								    <label for="Basic EPS">Basic EPS</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Total Current Assets (EUR m)" name="variables" value="Total Current Assets (EUR m)">
+								    <label for="Total Current Assets (EUR m)">Total Current Assets (EUR m)</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Cash flow from investing (EUR m)" name="variables" value="Cash flow from investing (EUR m)">
+								    <label for="Cash flow from investing (EUR m)">Cash flow from investing (EUR m)</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Cash from financing (EUR m)" name="variables" value="Cash from financing (EUR m)">
+								    <label for="Cash from financing (EUR m)">Cash from financing (EUR m)</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Levered Free Cash Flow (EUR m)" name="variables" value="Levered Free Cash Flow (EUR m)">
+								    <label for="Levered Free Cash Flow (EUR m)">Levered Free Cash Flow (EUR m)</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="Momentum FY2017" name="variables" value="Momentum FY2017">
+								    <label for="Momentum FY2017">Momentum FY2017</label>
+								  </div>
+								  <div class="checkboxFive">
+								    <input type="checkbox" id="P/E Value FY2017" name="variables" value="P/E Value FY2017">
+								    <label for="P/E Value FY2017">P/E Value FY2017</label>
+								  </div>
+
+								<!-- </fieldset> -->
+								
+								<div><input type = "submit"></div>	
+							</form>
+							
+							
+							
+							
+							
+							</script>
+							<!-- Scripts
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> -->
+							
+	</body>
+</html>

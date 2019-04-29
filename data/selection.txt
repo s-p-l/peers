@@ -1,0 +1,5 @@
+,0
+0,Country of Headquarters
+1,Industry Group Name
+2,EBIT (EUR m)
+3,Quick Ratio

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Choice</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+		<!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+		
+		
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="home.html" class="logo">
+									<span class="symbol"><img src="static/images/EY_Logo_Beam.jpg" alt="" /></span><span class="title">Peers' search</span>
+								</a>
+
+							<!-- Nav
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+ -->
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<!-- <nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="choice.html">Choice</a></li>
+							<li><a href="automated_process.html">Automated process</a></li>
+							<li><a href="selected_variables.html">Manual process</a></li>
+						</ul>
+					</nav> -->
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Make your choice</h1>
+							
+							<p>Please choose wether you want the algorithm to select the characteristics or if you prefer to do it by yourself. <br>
+
+							<!--<form action="generic3.html" method="post">-->
+								
+								<div>
+									<!--<label for="name">Automated process</label>-->
+									<div class="button"><a href="{{ url_for('automated_process') }}">Automated process</a></div>
+								</div>
+								
+								<div>
+									<!--<label for="name">Manual process</label>-->
+									<div class="button"><a href="{{ url_for('selected_variables') }}">Manual process</a></div>
+								</div>
+							<!--</form>-->
+							
+	
+								
+								
+								    
+							
+							</div>
+									<!-- Scripts
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> -->
+	</body>
+</html>

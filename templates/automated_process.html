@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Manual process</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+		<!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>	 -->
+		<!-- <link
+    	href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.css"
+    	rel="stylesheet" type="text/css"> -->
+		<!-- <link
+    	href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.13.min.css"
+    	rel="stylesheet" type="text/css">
+		<link
+    	href="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.13.min.css"
+   	 rel="stylesheet" type="text/css"> -->
+
+		<!-- <script src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.13.min.js"></script> -->
+		<!-- <script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.13.min.js"></script>
+		<script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.13.min.js"></script>	 -->
+
+		<!-- {{ script_automated|safe }} -->
+		
+	</head>
+
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a class="logo">
+									<span class="symbol"><img src="http://127.0.0.1:5000/static/images/EY_Logo_Beam.jpg" alt="" /></span><span class="title">Peers' search</span>
+								</a>
+
+							<!-- Nav -->
+								<!-- <nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav> -->
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="choice.html">Choice</a></li>
+							<!-- <li><a href="automated_process.html">Automated process</a></li>
+							<li><a href="selected_variables.html">Manual process</a></li> -->
+
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Automated process</h1>
+							<h2>Results</h2>
+
+							<!-- <div class="bk-root" id="a6713d09-de8a-44de-82b2-28ee6782b3e0"></div>							 -->
+							<div style = 'display: inline;' id="plot">
+								{{ div_automated|safe }}
+						</div>
+
+						<!-- <script>
+							fetch('/selection')
+								.then(function(response) { return response.json(); })
+								.then(function(item) { Bokeh.embed.embed_item(item); })
+							</script> -->
+							
+							<h2>Peers of the company</h2>
+							<div>
+								<table>
+									<tr>
+										<th>Peers</th>
+										<th>Proximity score</th>
+									</tr>
+									<tr>
+										<td>{{ peer1|safe }}</td>
+										<td>{{ perf1|safe }}%</td>
+
+									</tr>
+									<tr>
+										<td>{{ peer2|safe }}</td>
+										<td>{{ perf2|safe }}%</td>
+
+									</tr>
+									<tr>
+										<td>{{ peer3|safe }}</td>
+										<td>{{ perf3|safe }}%</td>
+
+									</tr>
+									<tr>
+										<td>{{ peer4|safe }}</td>
+										<td>{{ perf4|safe }}%</td>
+
+									</tr>
+									<tr>
+										<td>{{ peer5|safe }}</td>
+										<td>{{ perf5|safe }}%</td>
+
+									</tr>
+									<!-- <tr>
+										<td>{{ peer6|safe }}</td>
+									</tr>
+									<tr>
+										<td>{{ peer7|safe }}</td>
+									</tr>
+									<tr>
+										<td>{{ peer8|safe }}</td>
+									</tr>
+									<tr>
+										<td>{{ peer9|safe }}</td>
+									</tr>
+									<tr>
+										<td>{{ peer10|safe }}</td>
+									</tr>	 -->
+								</table>
+							</div>	
+							
+							<h2>Performance</h2>
+							<div>{{ perf_automated|safe }}%</div>
+			
+			<link
+					href="https://cdn.pydata.org/bokeh/release/bokeh-x.y.z.min.css"
+					rel="stylesheet" type="text/css">
+			<link
+					href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-x.y.z.min.css"
+					rel="stylesheet" type="text/css">
+			<link
+					href="https://cdn.pydata.org/bokeh/release/bokeh-tables-x.y.z.min.css"
+					rel="stylesheet" type="text/css">		
+			<script src="http://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.js"></script>
+			<script src= "https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.1.0.min.css"></script>
+			<script src= "https://cdn.pydata.org/bokeh/release/bokeh-tables-0.12.13.min.css"></script>
+
+			{{ script_automated|safe }}	
+
+							<!-- </script> -->
+							<!-- Scripts
+			
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> -->
+							
+	</body>
+</html>
